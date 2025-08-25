@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "3a43dcf2-0f95-4fc0-a112-70387fee115f",
+		"name": "Files",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47268133",
+		"_collection_link": "https://rubenretopanta-5758959.postman.co/workspace/Ruben's-Workspace~c41fc5a2-b12f-445f-8a5c-a12d702e40e9/collection/47268133-3a43dcf2-0f95-4fc0-a112-70387fee115f?action=share&source=collection_link&creator=47268133"
+	},
+	"item": [
+		{
+			"name": "upload",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9wZXJzb25hIjoxLCJlbWFpbCI6ImFuZHJlczI1QGdtYWlsLmNvbSIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzU1ODk2ODI5LCJleHAiOjE3NTU4OTY4ODl9.AjxuqiNjmrTBvu3l6o_nVYE0fateXVhotwwCc1UXEfM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/Ruben/Desktop/imagnes/lecgegloriaroja.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/archivos/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"archivos",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ulpoadxid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9wZXJzb25hIjoxLCJlbWFpbCI6ImFuZHJlczI1QGdtYWlsLmNvbSIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzU1ODk2ODI5LCJleHAiOjE3NTU4OTY4ODl9.AjxuqiNjmrTBvu3l6o_nVYE0fateXVhotwwCc1UXEfM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_producto",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/Ruben/Desktop/imagnes/lechegloria.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/catalogo/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"catalogo",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dowload",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9wZXJzb25hIjoxLCJlbWFpbCI6ImFuZHJlczI1QGdtYWlsLmNvbSIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzU1ODk2ODI5LCJleHAiOjE3NTU4OTY4ODl9.AjxuqiNjmrTBvu3l6o_nVYE0fateXVhotwwCc1UXEfM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_producto",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/Ruben/Desktop/imagnes/lechegloria.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/catalogo/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"catalogo",
+						"download"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

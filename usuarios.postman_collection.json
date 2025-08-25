@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "7ecf3af0-0c57-49fe-9caa-bac9ac3f08c5",
+		"name": "usuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47268133",
+		"_collection_link": "https://rubenretopanta-5758959.postman.co/workspace/Ruben's-Workspace~c41fc5a2-b12f-445f-8a5c-a12d702e40e9/collection/47268133-7ecf3af0-0c57-49fe-9caa-bac9ac3f08c5?action=share&source=collection_link&creator=47268133"
+	},
+	"item": [
+		{
+			"name": "busqueda_generalusuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/api/v1/persona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/api/v1/persona/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"persona",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo_registro",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9wZXJzb25hIjoxLCJlbWFpbCI6ImFuZHJlczI1QGdtYWlsLmNvbSIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzU1ODkzNjMxLCJleHAiOjE3NTU4OTM2OTF9.y_WxD7RuFQqqdMKtGr1bNDqh1s8Quu7oTZRn3RIG8RQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Alejandr\",\r\n    \"apellido\": \"caray molestias\",\r\n    \"nro_documento\": \"89712255\",\r\n    \"id_tipodocumento\": 1,\r\n    \"email\": \"romario@gmail.com\",\r\n    \"password\": \"1125888rr\",\r\n    \"rol\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/persona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar_registro",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9wZXJzb25hIjoxLCJlbWFpbCI6ImFuZHJlczI1QGdtYWlsLmNvbSIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzU1ODk2ODI5LCJleHAiOjE3NTU4OTY4ODl9.AjxuqiNjmrTBvu3l6o_nVYE0fateXVhotwwCc1UXEfM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Ruben\",\r\n    \"apellido\": \"caray molestias\",\r\n    \"nro_documento\": \"897122444\",\r\n    \"id_tipodocumento\": 1,\r\n    \"rol\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/persona/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"persona",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar_por_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9wZXJzb25hIjoxLCJlbWFpbCI6ImFuZHJlczI1QGdtYWlsLmNvbSIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzU1ODk4MjA3LCJleHAiOjE3NTU4OTgyNjd9.ZBf-ZjoOPGTj7-_6_6f86T2ySii1S7qMWSdgC162td4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/api/v1/persona/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"persona",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
